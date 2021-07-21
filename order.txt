@@ -1,0 +1,7 @@
+ls -l | awk '{print $9}' >> requirements.txt
+# pip install --no-index --find-links=./ -r requirements.txt
+
+
+./configure --enable-optimizations --prefix=/usr/local/python3
+ make && make install
+ ln -s /usr/local/python3/bin/python3 /usr/bin/python3[root@localhost local] ln -s /usr/local/python3/bin/pip3
